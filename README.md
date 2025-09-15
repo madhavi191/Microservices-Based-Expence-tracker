@@ -94,8 +94,10 @@ POST /users
   "password": "password1234"
 }
 
-Transaction Microservice:
+** Transaction Microservice **
+
 '''' json 
+
 POST /transactions
 {
   "userId": "12334", // once you update the user details & you will get USERID ( it will generate UserID automatically) 
@@ -104,7 +106,8 @@ POST /transactions
   "description": "Groceries"
 }
 
-Budget Microservice :
+**Budget Microservice **
+
 ''''' json
 
 POST /budgets
