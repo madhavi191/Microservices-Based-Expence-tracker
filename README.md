@@ -85,12 +85,35 @@ You can test them easily with Postman.
 
 **User Microservice**
 
-```json
+'''' json
 
 POST /users
 {
-  "name": "satya",
-  "email": "satya@gmail.com",
+  "name": "user",
+  "email": "user@gmail.com",
   "password": "password1234"
 }
+
+Transaction Microservice:
+'''' json 
+POST /transactions
+{
+  "userId": "12334", // once you update the user details & you will get USERID ( it will generate UserID automatically) 
+  "type": "expense",
+  "amount": 500.00,
+  "description": "Groceries"
+}
+
+Budget Microservice :
+''''' json
+
+POST /budgets
+{
+  "userId": "12345",
+  "month": "September",
+  "limit": 2000
+}
+
+
+
 
